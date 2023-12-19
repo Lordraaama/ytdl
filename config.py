@@ -12,9 +12,9 @@ import os
 # general settings
 WORKERS: int = int(os.getenv("WORKERS", 100))
 PYRO_WORKERS: int = int(os.getenv("PYRO_WORKERS", min(64, (os.cpu_count() + 4) * 10)))
-APP_ID: int = int(os.getenv("APP_ID", A))
-APP_HASH = os.getenv("APP_HASH", "B")
-TOKEN = os.getenv("TOKEN", "C")
+APP_ID: int = 27327455
+APP_HASH = "0b60d99056b4d168b1bd717aeb7a699b"
+TOKEN = "6884087876:AAE5vCFluWixPkhPrKILGHAfSpjpVutqZy8"
 
 REDIS = os.getenv("REDIS", "redis")
 
